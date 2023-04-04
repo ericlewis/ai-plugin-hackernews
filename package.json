@@ -1,0 +1,20 @@
+{
+	"name": "api-plugin-hackernews",
+	"description": "Get the top hacker news headlines.",
+	"version": "0.0.0",
+	"private": true,
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20230228.0",
+		"typescript": "^4.9.5",
+		"wrangler": "2.13.0"
+	},
+	"dependencies": {
+		"@cloudflare/itty-router-openapi": "^0.0.15"
+	},
+	"aiPlugin": {
+	  "name": "Hacker News",
+	  "prompt": "Plugin for retrieving the headlines for the current top stories on Hacker News, as well as summaries when requested. Use it whenever a user asks something that might be related to Hacker News or Top Tech News. If a summary is requested use the Bard plugin in order to summarize the URL.",
+	  "contact_email": "eric@coolcomputerclub.com",
+	  "legal_info_url": "http://example.com/legal-info"
+	}
+}
